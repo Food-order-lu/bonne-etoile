@@ -7,9 +7,49 @@
     background: var(--color-bg-light);
 }
 
+.aboutSection {
+    padding: 100px 0;
+    background: var(--color-bg-light);
+}
+
+.aboutGrid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.aboutImage {
+    position: relative;
+    border-radius: 2rem;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.aboutImage img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.aboutImage:hover img {
+    transform: scale(1.05);
+}
+
+.imageOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(27, 46, 29, 0.2) 0%, rgba(197, 179, 88, 0.1) 100%);
+    z-index: 1;
+}
+
 .sectionDark {
     padding: 6rem 0;
-    background: linear-gradient(135deg, var(--color-bg-dark) 0%, #1a2028 100%);
+    background: #1a1a1a;
     color: white;
 }
 
@@ -22,6 +62,16 @@
 .textCenter {
     text-align: center;
     margin-bottom: 4rem;
+}
+
+.aboutText .sectionTitle {
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+.aboutText .sectionSubtitle {
+    text-align: left;
+    margin-bottom: 2rem;
 }
 
 .sectionTitle {
@@ -191,9 +241,9 @@
 
 .specialtiesGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 2.5rem;
-    margin-top: 3rem;
+    margin-top: 4rem;
 }
 
 .specialtyCard {
@@ -321,19 +371,20 @@
 
 .btnPrimary {
     background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-dark) 100%);
-    color: var(--color-text-primary);
-    box-shadow: 0 4px 16px rgba(232, 184, 109, 0.3);
+    color: var(--color-primary-dark);
+    box-shadow: 0 4px 16px rgba(197, 179, 88, 0.3);
 }
 
 .btnPrimary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 24px rgba(232, 184, 109, 0.4);
+    box-shadow: 0 6px 24px rgba(197, 179, 88, 0.4);
 }
 
 .btnOutline {
-    background: transparent;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
     color: white;
-    border: 2px solid white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .btnOutline:hover {
@@ -405,7 +456,22 @@
 
     .section,
     .sectionDark {
-        padding: 4rem 0;
+        background: linear-gradient(135deg, #0F1419 0%, #1a2e1d 100%);
+        padding: 100px 0;
+        position: relative;
+        border-top: 2px solid rgba(255, 215, 0, 0.1);
+        border-bottom: 2px solid rgba(255, 215, 0, 0.1);
+    }
+
+    .sectionDark::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        background: radial-gradient(circle at center, rgba(255, 215, 0, 0.05) 0%, transparent 70%);
+        pointer-events: none;
     }
 
     .textCenter {
@@ -427,5 +493,94 @@
 
     .hoursCard {
         padding: 2rem 1.5rem;
+    }
+}
+
+/* Order Banner */
+.orderBanner {
+    padding: 6rem 0;
+    background: linear-gradient(rgba(18, 24, 18, 0.85), rgba(18, 24, 18, 0.85)), url('/images/hero_bg.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    color: white;
+}
+
+.orderBannerContent h2 {
+    color: white;
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    letter-spacing: 2px;
+    margin-bottom: 3rem;
+}
+
+.orderBannerButtons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Delivery Section */
+.deliverySection {
+    padding: 8rem 0;
+    background: var(--color-bg-light);
+}
+
+.deliveryGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+    align-items: center;
+}
+
+.deliveryImage img {
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: var(--shadow-xl);
+}
+
+.deliveryText h2 {
+    margin-bottom: 2rem;
+}
+
+.deliveryPhone {
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2.5rem;
+    background: white;
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.phoneIcon {
+    font-size: 3rem;
+    color: var(--color-accent);
+}
+
+.deliveryPhone p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+}
+
+.deliveryPhone a {
+    display: block;
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: var(--color-primary);
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 992px) {
+    .deliveryGrid {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    .specialtiesGrid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }

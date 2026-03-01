@@ -4,9 +4,9 @@ import Footer from "@/components/Footer";
 import "./globals.css";
 
 export const metadata: Metadata = {
-    title: "CHEZ ZHANG | Restaurant Chinois et Thaïlandais à Bereldange",
-    description: "Restaurant Chez Zhang à Bereldange : cuisine chinoise et thaïlandaise authentique. Sur place, à emporter ou livraison rapide. Réservez dès maintenant !",
-    keywords: "restaurant Bereldange, cuisine chinoise Luxembourg, cuisine thaïlandaise, canard laqué, pad thaï, dim sum, livraison restaurant",
+    title: "BONNE ÉTOILE | Restaurant Gastronomique à Ettelbruck",
+    description: "Restaurant Bonne étoile à Ettelbruck : découvrez notre cuisine raffinée et authentique. Un cadre élégant pour vos repas d'exception. Réservez votre table dès maintenant !",
+    keywords: "restaurant Ettelbruck, gastronomie Luxembourg, Bonne étoile, cuisine raffinée, restaurant élégant, réservation table Ettelbruck",
 };
 
 export default function RootLayout({

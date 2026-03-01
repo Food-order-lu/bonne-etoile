@@ -24,7 +24,7 @@ export default function MenuPage() {
             <section className={styles.hero}>
                 <div className={styles.heroContent}>
                     <h1>Notre Menu</h1>
-                    <p>Découvrez nos délicieuses spécialités chinoises et thaïlandaises</p>
+                    <p>Découvrez nos délicieuses spécialités gastronomiques</p>
                 </div>
             </section>
 
@@ -33,7 +33,7 @@ export default function MenuPage() {
                     <div className={styles.menuContent}>
                         <h2>Menu Complet</h2>
                         <p className={styles.subtitle}>
-                            Consultez notre menu complet et effectuez votre commande en ligne via GloriaFood
+                            Consultez notre menu complet et effectuez votre commande en ligne
                         </p>
 
                         <GloriaFoodWidget
@@ -44,8 +44,8 @@ export default function MenuPage() {
                         <div className={styles.infoBox}>
                             <h3>📞 Commande Téléphonique</h3>
                             <p>Vous préférez commander par téléphone ? Appelez-nous au :</p>
-                            <a href="tel:+35226331710" className={styles.phone}>
-                                +352 26 33 17 10
+                            <a href="tel:+352587855" className={styles.phone}>
+                                +352 58 78 55
                             </a>
                         </div>
                     </div>

@@ -34,29 +34,28 @@ export default function ContactPage() {
                             <div className={styles.infoCard}>
                                 <div className={styles.icon}>📞</div>
                                 <h3>Téléphone</h3>
-                                <a href="tel:+35226331710">+352 26 33 17 10</a>
+                                <a href="tel:+352587855">+352 58 78 55</a>
                             </div>
 
                             <div className={styles.infoCard}>
                                 <div className={styles.icon}>📍</div>
                                 <h3>Adresse</h3>
-                                <p>2 rue de bridel<br />L-7217 Bereldange Walferdange</p>
+                                <p>18, Rue de Feulen<br />9043 Ettelbruck, Luxembourg</p>
                             </div>
 
                             <div className={styles.infoCard}>
                                 <div className={styles.icon}>⏰</div>
                                 <h3>Horaires</h3>
-                                <p>Tous les jours</p>
-                                <p>Midi: 11h45 - 14h30</p>
-                                <p>Soir: 18h00 - 22h30</p>
+                                <p><strong>Lun - Ven:</strong> 11h30 - 14h00, 18h00 - 22h30</p>
+                                <p><strong>Sam - Dim:</strong> 18h00 - 22h30</p>
                             </div>
                         </div>
 
                         <div className={styles.reservationBox}>
                             <h2>Réserver une Table</h2>
                             <p>Appelez-nous directement pour réserver votre table :</p>
-                            <a href="tel:+35226331710" className={styles.btnPrimary}>
-                                📞 Réserver au +352 26 33 17 10
+                            <a href="tel:+352587855" className={styles.btnPrimary}>
+                                📞 Réserver au +352 58 78 55
                             </a>
 
                             <div className={styles.orDivider}>

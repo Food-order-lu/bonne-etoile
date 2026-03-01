@@ -9,33 +9,28 @@ export default function Hero() {
             <div className={styles.background}></div>
             <div className={styles.content}>
                 <div className={styles.textContent}>
-                    <h1 className={styles.title}>
-                        Restaurant <span className={styles.highlight}>Chez Zhang</span>
-                    </h1>
-                    <p className={styles.subtitle}>
-                        Cuisine authentique chinoise et thaïlandaise à Bereldange
-                    </p>
+                    <p className={styles.welcomeSubtitle}>BIENVENUE</p>
+                    <h1 className={styles.title}>Restaurant Bonne Étoile</h1>
+                    <h2 className={styles.subHeadline}>RESTAURANT GASTRONOMIQUE À ETTELBRUCK</h2>
                     <p className={styles.description}>
-                        Découvrez nos spécialités asiatiques préparées avec passion et des ingrédients de qualité.
+                        Une expérience gastronomique raffinée alliant tradition et créativité au cœur d&apos;Ettelbruck.
                     </p>
                     <div className={styles.buttons}>
-                        <a
-                            href="#menu"
+                        <span
                             className={`glf-button ${styles.btnPrimary}`}
-                            data-glf-cuid="51bac733-bb04-42fd-be77-8ed7c9d2d231"
-                            data-glf-ruid="fbb37f86-ac13-4234-976f-a21462001e16"
+                            data-glf-cuid="68118e79-a9ff-4c5e-9676-eb14e3799c92"
+                            data-glf-ruid="0ee15a57-ccca-4743-916a-d7ac447c7ff8"
                         >
-                            Voir le Menu
-                        </a>
-                        <a
-                            href="#reservation"
+                            COMMANDER EN LIGNE
+                        </span>
+                        <span
                             className={`glf-button reservation ${styles.btnOutline}`}
-                            data-glf-cuid="51bac733-bb04-42fd-be77-8ed7c9d2d231"
-                            data-glf-ruid="fbb37f86-ac13-4234-976f-a21462001e16"
+                            data-glf-cuid="68118e79-a9ff-4c5e-9676-eb14e3799c92"
+                            data-glf-ruid="0ee15a57-ccca-4743-916a-d7ac447c7ff8"
                             data-glf-reservation="true"
                         >
-                            Réserver une Table
-                        </a>
+                            TABLE RESERVATION
+                        </span>
                     </div>
                 </div>
             </div>

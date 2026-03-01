@@ -3,7 +3,6 @@
 import { useEffect } from 'react';
 import Hero from '@/components/Hero';
 import ServiceCard from '@/components/ServiceCard';
-import GloriaFoodWidget from '@/components/GloriaFoodWidget';
 import styles from './page.module.css';
 
 export default function Home() {
@@ -24,29 +23,29 @@ export default function Home() {
 
     return (
         <main className={styles.main}>
-            <Hero />
+            <div id="hero">
+                <Hero />
+            </div>
 
             {/* About Section */}
-            <section className={styles.section} id="about">
+            <section className={styles.aboutSection} id="about">
                 <div className={styles.container}>
-                    <div className={styles.textCenter}>
-                        <h2 className={styles.sectionTitle}>Bienvenue au Restaurant Chez Zhang</h2>
-                        <p className={styles.sectionSubtitle}>
-                            Une expérience culinaire asiatique authentique à Bereldange
-                        </p>
-                    </div>
-
-                    <div className={styles.aboutContent}>
+                    <div className={styles.aboutGrid}>
                         <div className={styles.aboutText}>
-                            <p>
-                                Bienvenue au <strong>Restaurant Chez Zhang</strong>, situé à Bereldange, où nous vous
-                                accueillons tous les jours dans une ambiance chaleureuse et conviviale.
+                            <h2 className={styles.sectionTitle}>Bienvenue au Restaurant Bonne étoile</h2>
+                            <p className={styles.sectionSubtitle}>
+                                Une symphonie de saveurs au cœur d&apos;Ettelbruck
                             </p>
                             <p>
-                                Notre établissement propose une <strong>cuisine authentique chinoise et thaïlandaise</strong>,
-                                préparée avec des ingrédients frais et de qualité. Que ce soit pour un déjeuner rapide, un dîner
-                                en famille ou entre amis, nous nous engageons à vous offrir une expérience culinaire mémorable.
+                                Situé au centre d&apos;Ettelbruck, le <strong>Restaurant Bonne étoile</strong> vous invite à un voyage gastronomique d&apos;exception dans un cadre élégant et raffiné.
                             </p>
+                            <p>
+                                Notre Chef élabore une <strong>cuisine créative et authentique</strong>, mettant à l&apos;honneur les produits de saison et le terroir luxembourgeois. Chaque plat est une œuvre d&apos;art, conçue pour vous offrir une expérience culinaire inoubliable.
+                            </p>
+                        </div>
+                        <div className={styles.aboutImage}>
+                            <div className={styles.imageOverlay}></div>
+                            <img src="/about-bg.jpg" alt="Bonne Étoile" />
                         </div>
                     </div>
                 </div>
@@ -58,45 +57,47 @@ export default function Home() {
                     <div className={styles.textCenter}>
                         <h2 className={styles.sectionTitleLight}>Nos Services</h2>
                         <p className={styles.sectionSubtitleLight}>
-                            Flexibilité et qualité pour votre plus grand plaisir
+                            L&apos;excellence à votre service
                         </p>
                     </div>
 
                     <div className={styles.grid}>
                         <ServiceCard
                             icon="🍽️"
-                            title="Sur Place"
-                            description="Profitez d'une ambiance cosy et conviviale dans notre restaurant chaleureux"
+                            title="Authenticité"
+                            description="Une cuisine gastronomique préparée avec passion et respect des produits."
                         />
                         <ServiceCard
-                            icon="📦"
-                            title="À Emporter"
-                            description="Commandez vos plats préférés et venez les chercher à votre convenance"
+                            icon="✨"
+                            title="Expérience Culinaire"
+                            description="Un voyage sensoriel unique au cœur d'Ettelbruck pour ravir vos sens."
                         />
                         <ServiceCard
-                            icon="🚀"
-                            title="Livraison"
-                            description="Profitez de notre service de livraison rapide et fiable à domicile"
+                            icon="🤝"
+                            title="Ambiance"
+                            description="Un cadre élégant et chaleureux pour vos moments les plus précieux."
                         />
                     </div>
                 </div>
             </section>
 
-            {/* Commander en Ligne Section - GloriaFood */}
-            <section className={styles.orderSection}>
+            {/* Order Banner Section */}
+            <section className={styles.orderBanner}>
                 <div className={styles.container}>
-                    <div className={styles.orderContent}>
-                        <div className={styles.orderTextBox}>
-                            <h2>Commander en Ligne</h2>
-                            <p>
-                                Commandez directement en ligne via GloriaFood pour la livraison à domicile ou le retrait au restaurant.
-                                Menu complet disponible !
-                            </p>
+                    <div className={styles.orderBannerContent}>
+                        <h2>PRÊT À DÉCOUVRIR NOS CRÉATIONS ?</h2>
+                        <div className={styles.orderBannerButtons}>
+                            <span
+                                className={`glf-button ${styles.btnPrimary}`}
+                                data-glf-cuid="68118e79-a9ff-4c5e-9676-eb14e3799c92"
+                                data-glf-ruid="0ee15a57-ccca-4743-916a-d7ac447c7ff8"
+                            >
+                                COMMANDER EN LIGNE
+                            </span>
+                            <a href="#specialties" className={styles.btnOutline}>
+                                NOS SPÉCIALITÉS
+                            </a>
                         </div>
-                        <GloriaFoodWidget
-                            showOrderButton={true}
-                            showReservationButton={true}
-                        />
                     </div>
                 </div>
             </section>
@@ -114,37 +115,61 @@ export default function Home() {
                     <div className={styles.specialtiesGrid}>
                         <div className={styles.specialtyCard}>
                             <div className={styles.specialtyImage} style={{
-                                backgroundImage: 'url(https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80)'
+                                backgroundImage: 'url(/images/dish_1.png)'
                             }}></div>
                             <div className={styles.specialtyContent}>
-                                <h3>Canard Laqué de Pékin</h3>
+                                <h3>Filet de Bœuf aux Morilles</h3>
                                 <p>
-                                    Croustillant et fondant, servi avec ses crêpes fines et sauce hoisin. Un classique de la cuisine chinoise.
+                                    Une viande d&apos;exception sublimée par une sauce onctueuse aux morilles fraîches.
                                 </p>
                             </div>
                         </div>
 
                         <div className={styles.specialtyCard}>
                             <div className={styles.specialtyImage} style={{
-                                backgroundImage: 'url(https://images.unsplash.com/photo-1559314809-0d155014e29e?w=800&q=80)'
+                                backgroundImage: 'url(/images/dish_2.png)'
                             }}></div>
                             <div className={styles.specialtyContent}>
-                                <h3>Pad Thaï Royal</h3>
+                                <h3>Omble Chevalier du Lac</h3>
                                 <p>
-                                    Nouilles de riz sautées aux crevettes tigrées, tofu, oeuf et cacahuètes. Parfait équilibre de saveurs.
+                                    Délicat et raffiné, servi avec une mousseline de panais et légumes oubliés.
                                 </p>
                             </div>
                         </div>
 
                         <div className={styles.specialtyCard}>
                             <div className={styles.specialtyImage} style={{
-                                backgroundImage: 'url(https://images.unsplash.com/photo-1496116218417-1a781b1c423c?w=800&q=80)'
+                                backgroundImage: 'url(/images/dish_3.png)'
                             }}></div>
                             <div className={styles.specialtyContent}>
-                                <h3>Dim Sum Maison</h3>
+                                <h3>Sphère Chocolat Surprise</h3>
                                 <p>
-                                    Assortiment de vapeurs faits main chaque matin. Dumplings aux crevettes, porc et légumes.
+                                    Une explosion de douceur avec son cœur fondant au caramel beurre salé.
                                 </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Delivery Section */}
+            <section className={styles.deliverySection}>
+                <div className={styles.container}>
+                    <div className={styles.deliveryGrid}>
+                        <div className={styles.deliveryImage}>
+                            <img src="/hero-bg.jpg" alt="Livraison Bonne Étoile" />
+                        </div>
+                        <div className={styles.deliveryText}>
+                            <h2 className={styles.sectionTitle}>Livraison Rapide et Fiable</h2>
+                            <p>
+                                Profitez de la gastronomie de Bonne étoile directement chez vous. Nous assurons une livraison rapide pour garantir la fraîcheur et la qualité de nos plats.
+                            </p>
+                            <div className={styles.deliveryPhone}>
+                                <span className={styles.phoneIcon}>📞</span>
+                                <div>
+                                    <p>Appelez-nous pour commander</p>
+                                    <a href="tel:+352587855">+352 58 78 55</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -158,7 +183,7 @@ export default function Home() {
                         <div className={styles.contactInfo}>
                             <h2 className={styles.sectionTitleLight}>Nous Contacter</h2>
                             <p className={styles.contactText}>
-                                N&apos;hésitez pas à nous contacter pour toute question ou pour réserver votre table.
+                                Pour toute réservation ou demande spécifique, notre équipe est à votre entière disposition.
                             </p>
 
                             <div className={styles.contactDetails}>
@@ -166,7 +191,7 @@ export default function Home() {
                                     <div className={styles.contactIcon}>📞</div>
                                     <div>
                                         <h4>Téléphone</h4>
-                                        <a href="tel:+35226331710">+352 26 33 17 10</a>
+                                        <a href="tel:+352587855">+352 58 78 55</a>
                                     </div>
                                 </div>
 
@@ -174,17 +199,22 @@ export default function Home() {
                                     <div className={styles.contactIcon}>📍</div>
                                     <div>
                                         <h4>Adresse</h4>
-                                        <p>2 rue de bridel<br />L-7217 Bereldange Walferdange</p>
+                                        <p>18, Rue de Feulen<br />9043 Ettelbruck, Luxembourg</p>
                                     </div>
                                 </div>
                             </div>
 
                             <div className={styles.cta}>
-                                <a href="tel:+35226331710" className={styles.btnPrimary}>
-                                    Réserver une Table
-                                </a>
-                                <a href="/menu" className={styles.btnOutline}>
-                                    Voir le Menu
+                                <span
+                                    className={`glf-button reservation ${styles.btnPrimary}`}
+                                    data-glf-cuid="68118e79-a9ff-4c5e-9676-eb14e3799c92"
+                                    data-glf-ruid="0ee15a57-ccca-4743-916a-d7ac447c7ff8"
+                                    data-glf-reservation="true"
+                                >
+                                    RÉSERVER UNE TABLE
+                                </span>
+                                <a href="#specialties" className={styles.btnOutline}>
+                                    Découvrir la Carte
                                 </a>
                             </div>
                         </div>
@@ -193,15 +223,11 @@ export default function Home() {
                             <h3>Horaires d&apos;Ouverture</h3>
                             <div className={styles.hoursList}>
                                 <div className={styles.hourItem}>
-                                    <span className={styles.day}>Tous les jours</span>
-                                    <span className={styles.time}></span>
+                                    <span className={styles.day}>Lundi - Vendredi</span>
+                                    <span className={styles.time}>11h30 - 14h00, 18h00 - 22h30</span>
                                 </div>
                                 <div className={styles.hourItem}>
-                                    <span className={styles.day}>Midi</span>
-                                    <span className={styles.time}>11h45 - 14h30</span>
-                                </div>
-                                <div className={styles.hourItem}>
-                                    <span className={styles.day}>Soir</span>
+                                    <span className={styles.day}>Samedi - Dimanche</span>
                                     <span className={styles.time}>18h00 - 22h30</span>
                                 </div>
                             </div>

@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import styles from './Navbar.module.css';
 
 export default function Navbar() {
@@ -34,44 +35,62 @@ export default function Navbar() {
         <nav className={`${styles.navbar} ${isScrolled ? styles.scrolled : ''}`}>
             <div className={styles.container}>
                 <Link href="/" className={styles.logo}>
-                    <span className={styles.logoText}>CHEZ ZHANG</span>
-                    <span className={styles.logoSubtext}>Restaurant Chinois & Thaïlandais</span>
+                    <Image
+                        src="/logo.png"
+                        alt="Bonne Étoile Logo"
+                        width={180}
+                        height={60}
+                        className={styles.logoImage}
+                        priority
+                    />
                 </Link>
 
                 <div className={`${styles.navLinks} ${isMobileMenuOpen ? styles.mobileMenuOpen : ''}`}>
-                    <Link href="/" className={styles.navLink}>
+                    <a href="#hero" className={styles.navLink} onClick={() => setIsMobileMenuOpen(false)}>
                         Accueil
-                    </Link>
-                    <Link href="/menu" className={styles.navLink}>
-                        Menu
-                    </Link>
-                    <Link href="/contact" className={styles.navLink}>
+                    </a>
+                    <a href="#about" className={styles.navLink} onClick={() => setIsMobileMenuOpen(false)}>
+                        À Propos
+                    </a>
+                    <a href="#services" className={styles.navLink} onClick={() => setIsMobileMenuOpen(false)}>
+                        Services
+                    </a>
+                    <a href="#specialties" className={styles.navLink} onClick={() => setIsMobileMenuOpen(false)}>
+                        Spécialités
+                    </a>
+                    <a href="#contact" className={styles.navLink} onClick={() => setIsMobileMenuOpen(false)}>
                         Contact
-                    </Link>
+                    </a>
+
+                    <div className={styles.mobileMenuInfo}>
+                        <p>2 Rue de l&apos;École, Ettelbruck</p>
+                        <p>+352 123 456 789</p>
+                        <div className={styles.socialPlaceholder}>
+                            {/* Placeholder for social icons */}
+                        </div>
+                    </div>
                 </div>
 
                 <div className={styles.ctaButtons}>
-                    <a
-                        href="#reservation"
+                    <span
                         className={`glf-button reservation ${styles.btnSecondary}`}
-                        data-glf-cuid="51bac733-bb04-42fd-be77-8ed7c9d2d231"
-                        data-glf-ruid="fbb37f86-ac13-4234-976f-a21462001e16"
+                        data-glf-cuid="68118e79-a9ff-4c5e-9676-eb14e3799c92"
+                        data-glf-ruid="0ee15a57-ccca-4743-916a-d7ac447c7ff8"
                         data-glf-reservation="true"
                     >
-                        Réserver
-                    </a>
-                    <a
-                        href="#order"
+                        RÉSERVER
+                    </span>
+                    <span
                         className={`glf-button ${styles.btnPrimary}`}
-                        data-glf-cuid="51bac733-bb04-42fd-be77-8ed7c9d2d231"
-                        data-glf-ruid="fbb37f86-ac13-4234-976f-a21462001e16"
+                        data-glf-cuid="68118e79-a9ff-4c5e-9676-eb14e3799c92"
+                        data-glf-ruid="0ee15a57-ccca-4743-916a-d7ac447c7ff8"
                     >
-                        Commander
-                    </a>
+                        COMMANDER
+                    </span>
                 </div>
 
                 <button
-                    className={styles.mobileMenuToggle}
+                    className={`${styles.mobileMenuToggle} ${isMobileMenuOpen ? styles.active : ''}`}
                     onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                     aria-label="Toggle menu"
                 >
