@@ -106,9 +106,9 @@ export default function Home() {
             <section className={styles.section} id="specialties">
                 <div className={styles.container}>
                     <div className={styles.textCenter}>
-                        <h2 className={styles.sectionTitle}>Nos Spécialités</h2>
+                        <h2 className={styles.sectionTitle}>L&apos;Expérience Bonne Étoile</h2>
                         <p className={styles.sectionSubtitle}>
-                            Un large choix pour ravir tous les palais
+                            Ce qui fait de notre restaurant un lieu unique pour vos repas
                         </p>
                     </div>
 
@@ -118,9 +118,9 @@ export default function Home() {
                                 backgroundImage: 'url(/images/dish_1.png)'
                             }}></div>
                             <div className={styles.specialtyContent}>
-                                <h3>Filet de Bœuf aux Morilles</h3>
+                                <h3>Cuisine Authentique</h3>
                                 <p>
-                                    Une viande d&apos;exception sublimée par une sauce onctueuse aux morilles fraîches.
+                                    Des saveurs délicieuses préparées avec passion, mariant tradition et ingrédients de premier choix.
                                 </p>
                             </div>
                         </div>
@@ -130,9 +130,9 @@ export default function Home() {
                                 backgroundImage: 'url(/images/dish_2.png)'
                             }}></div>
                             <div className={styles.specialtyContent}>
-                                <h3>Omble Chevalier du Lac</h3>
+                                <h3>Ambiance Chaleureuse</h3>
                                 <p>
-                                    Délicat et raffiné, servi avec une mousseline de panais et légumes oubliés.
+                                    Un cadre convivial, moderne et accueillant, parfait pour vos repas en famille ou événements spéciaux.
                                 </p>
                             </div>
                         </div>
@@ -142,9 +142,9 @@ export default function Home() {
                                 backgroundImage: 'url(/images/dish_3.png)'
                             }}></div>
                             <div className={styles.specialtyContent}>
-                                <h3>Sphère Chocolat Surprise</h3>
+                                <h3>Service Attentionné</h3>
                                 <p>
-                                    Une explosion de douceur avec son cœur fondant au caramel beurre salé.
+                                    Notre équipe dévouée a à cœur de vous offrir une expérience fluide, souriante et sur mesure.
                                 </p>
                             </div>
                         </div>
