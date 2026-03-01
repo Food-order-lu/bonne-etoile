@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Restaurant Bonne Étoile - Ettelbruck
 
-## Getting Started
+Bienvenue sur le dépôt du site web officiel du **Restaurant Gastronomique Bonne Étoile**, situé au cœur d'Ettelbruck, au Luxembourg. 
 
-First, run the development server:
+Ce site met en avant l'expérience culinaire unique, l'atmosphère raffinée et les spécialités de l'établissement à travers une conception moderne "One-Page".
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Technologies Utilisées
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Ce projet est développé avec des technologies modernes pour assurer performance, accessibilité et design percutant :
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **[Next.js](https://nextjs.org/)** - Framework React pour le rendu et le routage.
+- **[React](https://reactjs.org/)** - Bibliothèque JavaScript pour les interfaces utilisateurs.
+- **CSS Modules** - Pour un style isolé, élégant et facile à maintenir.
+- **GloriaFood Integration** - Système de commande et réservation en ligne intégré.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📦 Installation et Lancement
 
-## Learn More
+Pour lancer le projet en local sur votre machine, suivez ces étapes :
 
-To learn more about Next.js, take a look at the following resources:
+1. **Cloner le dépôt :**
+   ```bash
+   git clone https://github.com/Food-order-lu/bonne-etoile.git
+   cd bonne-etoile
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. **Installer les dépendances :**
+   ```bash
+   npm install
+   # ou
+   yarn install
+   # ou
+   pnpm install
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. **Lancer le serveur de développement :**
+   ```bash
+   npm run dev
+   # ou
+   yarn dev
+   # ou
+   pnpm dev
+   ```
 
-## Deploy on Vercel
+4. **Visualiser le site :**
+   Ouvrez [http://localhost:3000](http://localhost:3000) (ou le port indiqué par votre terminal, ex: `3005`) avec votre navigateur pour voir le résultat.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🎨 Architecture et Design
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Le site web est conçu comme une application "One-Page", c'est-à-dire que la navigation se fait de manière fluide sur une seule page déroulante. Les sections principales incluent :
+- **Hero/Accueil :** Une introduction immersive avec appels à l'action (Réservation & Commande).
+- **À Propos :** L'histoire et l'ambiance du restaurant.
+- **Services :** Nos prestations sur place, à emporter ou en livraison.
+- **Spécialités :** Une sélection appétissante de nos créations.
+- **Contact :** Adresse physique, informations de livraison et liens sociaux.
+
+Le design met l'accent sur les couleurs premium (or, teintes sombres) pour refléter l'aspect "Gastronomique" du restaurant.
+
+## 📝 Licence et Structure
+
+L'application commence dans le dossier `src/app/`, notamment `src/app/page.tsx`, et s'appuie sur divers composants stockés dans `src/components/` disposant chacun de leurs propres styles locaux (`*.module.css`).
+
+---
+Créé pour le **Restaurant Bonne Étoile, Ettelbruck**.
