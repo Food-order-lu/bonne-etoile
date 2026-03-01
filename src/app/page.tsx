@@ -152,40 +152,6 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* Gallery Section */}
-            <section className={styles.gallerySection} id="galerie">
-                <div className={styles.container}>
-                    <div className={styles.textCenter}>
-                        <h2 className={styles.sectionTitle}>Notre Galerie</h2>
-                        <p className={styles.sectionSubtitle}>
-                            Découvrez le Restaurant Bonne Étoile en images
-                        </p>
-                    </div>
-
-                    <div className={styles.galleryGrid}>
-                        {[
-                            'IMG_0740-HDR.jpg',
-                            'IMG_0749-HDR.jpg',
-                            'IMG_0752-HDR.jpg',
-                            'IMG_0761-HDR.jpg',
-                            'IMG_0773.jpg',
-                            'IMG_0785.jpg',
-                            'IMG_0806-HDR.jpg',
-                            'IMG_0818-HDR.jpg'
-                        ].map((img, index) => (
-                            <div key={index} className={styles.galleryItem}>
-                                <img
-                                    src={`/images/gallery/${img}`}
-                                    alt={`Galerie Bonne Étoile ${index + 1}`}
-                                    className={styles.galleryImage}
-                                    loading="lazy"
-                                />
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
             {/* Delivery Section */}
             <section className={styles.deliverySection}>
                 <div className={styles.container}>
