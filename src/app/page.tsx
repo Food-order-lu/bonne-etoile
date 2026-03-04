@@ -238,9 +238,6 @@ export default function Home() {
                                 >
                                     RÉSERVER UNE TABLE
                                 </span>
-                                <a href="#specialties" className={styles.btnOutline}>
-                                    Découvrir la Carte
-                                </a>
                             </div>
                         </div>
 
