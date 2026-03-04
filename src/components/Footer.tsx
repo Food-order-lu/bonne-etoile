@@ -41,7 +41,7 @@ export default function Footer() {
                         © {new Date().getFullYear()} Bonne Étoile Ettelbruck. Tous droits réservés.
                     </p>
                     <p className={styles.credit}>
-                        Site créé avec ❤️ pour Bonne Étoile
+                        Site créé avec ❤️ par <a href="https://webvision.lu" target="_blank" rel="noopener noreferrer">Webvision.lu</a>
                     </p>
                 </div>
             </div>

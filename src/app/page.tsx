@@ -34,18 +34,28 @@ export default function Home() {
                         <div className={styles.aboutText}>
                             <h2 className={styles.sectionTitle}>Bienvenue au Restaurant Bonne étoile</h2>
                             <p className={styles.sectionSubtitle}>
-                                Une symphonie de saveurs au cœur d&apos;Ettelbruck
+                                L&apos;excellence gastronomique au cœur d&apos;Ettelbruck
                             </p>
                             <p>
-                                Situé au centre d&apos;Ettelbruck, le <strong>Restaurant Bonne étoile</strong> vous invite à un voyage gastronomique d&apos;exception dans un cadre élégant et raffiné.
+                                Découvrez une <strong>expérience culinaire d&apos;exception</strong> au Restaurant Bonne étoile. Situé au centre d&apos;Ettelbruck, notre établissement vous accueille dans un cadre élégant où chaque détail est pensé pour votre confort et votre plaisir.
                             </p>
                             <p>
-                                Notre Chef élabore une <strong>cuisine créative et authentique</strong>, mettant à l&apos;honneur les produits de saison et le terroir luxembourgeois. Chaque plat est une œuvre d&apos;art, conçue pour vous offrir une expérience culinaire inoubliable.
+                                Notre Chef passionné sublime les <strong>produits frais et de saison</strong> pour créer une cuisine à la fois créative et respectueuse de l&apos;authenticité des saveurs. Que ce soit pour un déjeuner d&apos;affaires ou un dîner romantique, nous vous garantissons un voyage sensoriel inoubliable.
                             </p>
+                            <div className={styles.aboutStats}>
+                                <div className={styles.statItem}>
+                                    <strong>Fait Maison</strong>
+                                    <span>Produits Frais</span>
+                                </div>
+                                <div className={styles.statItem}>
+                                    <strong>Cadre Unique</strong>
+                                    <span>Ambiance Élégante</span>
+                                </div>
+                            </div>
                         </div>
                         <div className={styles.aboutImage}>
                             <div className={styles.imageOverlay}></div>
-                            <img src="/about-bg.jpg" alt="Bonne Étoile" />
+                            <img src="/about-bg.jpg" alt="Restaurant Bonne Étoile Ettelbruck" className={styles.mainAboutImg} />
                         </div>
                     </div>
                 </div>

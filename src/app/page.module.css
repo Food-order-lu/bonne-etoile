@@ -28,9 +28,14 @@
 
 .aboutImage img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
     display: block;
     transition: transform 0.5s ease;
+}
+
+.mainAboutImg {
+    min-height: 450px;
 }
 
 .aboutImage:hover img {
@@ -119,6 +124,34 @@
 .aboutText strong {
     color: var(--color-primary);
     font-weight: 600;
+}
+
+.aboutStats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.statItem {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.statItem strong {
+    font-size: 1.5rem;
+    color: var(--color-primary);
+    font-family: var(--font-display);
+}
+
+.statItem span {
+    font-size: 0.95rem;
+    color: var(--color-text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .grid {
