@@ -411,12 +411,15 @@
         color: white !important;
     }
 
-    .sectionTitle {
+    .section .sectionTitle,
+    .sectionDark .sectionTitle,
+    .section .sectionSubtitle,
+    .sectionDark .sectionSubtitle {
         color: white !important;
     }
 
-    .sectionSubtitle {
-        color: rgba(255, 255, 255, 0.8) !important;
+    .sectionTitle {
+        font-size: 2.25rem !important;
     }
 
     .aboutText .sectionTitle,
