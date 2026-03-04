@@ -64,7 +64,7 @@ export default function Navbar() {
 
                     <div className={styles.mobileMenuInfo}>
                         <p>2 Rue de l&apos;École, Ettelbruck</p>
-
+                        <p>+352 58 78 55</p>
                         <div className={styles.socialPlaceholder}>
                             {/* Placeholder for social icons */}
                         </div>

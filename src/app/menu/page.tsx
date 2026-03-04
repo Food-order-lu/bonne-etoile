@@ -41,7 +41,13 @@ export default function MenuPage() {
                             showReservationButton={true}
                         />
 
-
+                        <div className={styles.infoBox}>
+                            <h3>📞 Commande Téléphonique</h3>
+                            <p>Vous préférez commander par téléphone ? Appelez-nous au :</p>
+                            <a href="tel:+352587855" className={styles.phone}>
+                                +352 58 78 55
+                            </a>
+                        </div>
                     </div>
                 </div>
             </section>

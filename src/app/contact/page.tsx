@@ -53,7 +53,14 @@ export default function ContactPage() {
 
                         <div className={styles.reservationBox}>
                             <h2>Réserver une Table</h2>
-                            <p>Simplifiez-vous la vie en réservant votre table directement en ligne :</p>
+                            <p>Appelez-nous directement pour réserver votre table :</p>
+                            <a href="tel:+352587855" className={styles.btnPrimary}>
+                                📞 Réserver au +352 58 78 55
+                            </a>
+
+                            <div className={styles.orDivider}>
+                                <span>ou</span>
+                            </div>
 
                             <span
                                 className="glf-button reservation"
