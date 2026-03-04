@@ -608,9 +608,19 @@
 }
 
 @media (max-width: 992px) {
-    .deliveryGrid {
+
+    .deliveryGrid,
+    .aboutGrid {
         grid-template-columns: 1fr;
-        gap: 4rem;
+        gap: 3rem;
+    }
+
+    .aboutImage {
+        order: -1;
+    }
+
+    .aboutSection {
+        padding: 60px 0;
     }
 
     .specialtiesGrid {
