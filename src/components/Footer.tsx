@@ -31,7 +31,7 @@ export default function Footer() {
                             <a href="#" className={styles.socialIcon}>IG</a>
                         </div>
                         <div className={styles.footerContact}>
-                            <p>Tél: <a href="tel:+352587855">+352 58 78 55</a></p>
+                            <p>Ettelbruck, Luxembourg</p>
                         </div>
                     </div>
                 </div>

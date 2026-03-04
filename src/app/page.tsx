@@ -164,12 +164,27 @@ export default function Home() {
                             <p>
                                 Profitez de la gastronomie de Bonne étoile directement chez vous. Nous assurons une livraison rapide pour garantir la fraîcheur et la qualité de nos plats.
                             </p>
-                            <div className={styles.deliveryPhone}>
-                                <span className={styles.phoneIcon}>📞</span>
-                                <div>
-                                    <p>Appelez-nous pour commander</p>
-                                    <a href="tel:+352587855">+352 58 78 55</a>
-                                </div>
+                            <div className={styles.deliveryCTA}>
+                                <span
+                                    className="glf-button"
+                                    data-glf-cuid="68118e79-a9ff-4c5e-9676-eb14e3799c92"
+                                    data-glf-ruid="0ee15a57-ccca-4743-916a-d7ac447c7ff8"
+                                    style={{
+                                        backgroundColor: 'var(--color-primary)',
+                                        color: 'white',
+                                        padding: '1.2rem 2.5rem',
+                                        borderRadius: '1rem',
+                                        fontSize: '1.1rem',
+                                        fontWeight: '700',
+                                        cursor: 'pointer',
+                                        display: 'inline-block',
+                                        marginTop: '2rem',
+                                        boxShadow: 'var(--shadow-lg)',
+                                        transition: 'transform 0.3s ease, box-shadow 0.3s ease'
+                                    }}
+                                >
+                                    COMMANDER EN LIGNE
+                                </span>
                             </div>
                         </div>
                     </div>
