@@ -617,13 +617,30 @@
 
     .aboutImage {
         order: -1;
+        max-height: 350px;
+    }
+
+    .mainAboutImg {
+        min-height: unset;
+        height: auto;
     }
 
     .aboutSection {
-        padding: 60px 0;
+        padding: 50px 0;
     }
 
     .specialtiesGrid {
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .aboutStats {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .specialtiesGrid {
+        grid-template-columns: 1fr;
     }
 }
