@@ -10,6 +10,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/private/',
     },
-    sitemap: 'https://bonne-étoile.com/sitemap.xml',
+    sitemap: 'https://xn--bonne-toile-gbb.com/sitemap.xml',
   }
 }
