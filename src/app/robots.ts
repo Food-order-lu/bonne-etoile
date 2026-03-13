@@ -10,6 +10,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/private/',
     },
-    sitemap: 'https://www.bonne-etoile.lu/sitemap.xml',
+    sitemap: 'https://www.bonne-etoile.com/sitemap.xml',
   }
 }
