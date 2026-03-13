@@ -4,7 +4,7 @@ export const dynamic = 'force-static'
 
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://bonne-etoile.com'
+  const baseUrl = 'https://bonne-étoile.com'
   
   return [
     {
